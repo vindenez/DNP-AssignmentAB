@@ -42,10 +42,12 @@ public class CreditCardsMainTest {
 
         assertThat(address.getStreet(), is("Inndalsveien"));
         assertThat(address.getNumber(), is(28));
+
         assertThat(address.getOwners(), is(Set.of(customer)));
 
         // Test credit cards
         assertThat(customer.getCreditCards().size(), is(2));
+        System.out.println(customer.getCreditCards().iterator().next().getNumber());
         CreditCard firstCard = getCardWithNumber(customer, 12345);
         CreditCard secondCard = getCardWithNumber(customer, 123);
 
