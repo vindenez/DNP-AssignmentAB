@@ -32,8 +32,7 @@ public class CreditCardsMain {
     Address address = new Address();
     address.setStreet("Inndalsveien");
     address.setNumber(28);
-
-
+    
     List<Customer> ownersList = new ArrayList<>(Set.of(customer));
 
     address.setOwners(ownersList);
@@ -56,7 +55,6 @@ public class CreditCardsMain {
     creditCard1.setBalance(-5000);
     creditCard1.setCreditLimit(-10000);
     creditCard1.setCustomers(List.of(customer));
-
 
     creditCard2.setNumber(123);
     creditCard2.setBalance(1);
